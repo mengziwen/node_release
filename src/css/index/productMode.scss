@@ -1,0 +1,329 @@
+@import "common";
+.selectTitle{
+  position: absolute;
+  @include set-font();
+  left: calc(50% - 64px);
+  top: 13px;
+}
+.schedule{
+  width:174px;
+  height: 30px;
+  position: relative;
+  top: 13px;
+  left: 628px;
+  margin-bottom: 26px;
+  @include set-border($defaultColor);
+  border-radius: 4px;
+  .phase{
+    border:0 !important;
+    font-size: 16px;
+    float: left;
+    height:28px;
+    color: #2c9ae8;
+    padding: 0;
+    width: 86px;
+    margin: 0;
+    border-right:0;
+    @include set-center(28px);
+    &:hover{
+      background-color: #fff!important;
+      color:#2c9ae8;
+      text-shadow:1px 1px 1px #2c9ae8 ;
+    }
+  }
+  .phaseOne{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .phaseTwo{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .active{
+    border:0;
+    color: #fff!important;
+    background-color: $defaultColor!important;
+    cursor: default;
+    &:hover{
+      @extend .active;
+    }
+  }
+}
+.selectList{
+  width: 786px;
+  margin: 0 auto;
+  @include set-border(#e0e0e0);
+  @include set-radius(6px);
+  label{
+    height: 38px;
+    line-height: 38px;
+    margin: 0 12px;
+    float: left;
+    @include set-font();
+  }
+  .arrow{
+    width: 24px;
+    height: 26px;
+    position: relative;
+    float: right;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: url("../../images/productMode/scqkxz_device_3.png") no-repeat scroll 8px center transparent;
+    background-color: rgb(224,224,224);
+  }
+  .selectBox{
+    width: 229px;
+    height:28px;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+    position: relative;
+  }
+  select{
+    float: left;
+    outline:none;
+    width:229px;
+    height:26px;
+    line-height:26px;
+    padding-left: 4px;
+    @include set-font(12px);
+    @include set-radius(4px);
+    border-color: #e0e0e0;
+    position: absolute;
+    background-color: transparent;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    z-index: 10;
+  }
+  select::-ms-expand { background-color: #bbb }
+  button{
+    margin-top: 5px;
+    float: left;
+    width:86px;
+    height:28px;
+    background-color: $defaultColor;
+    border:none;
+    @include set-radius();
+    @include set-font(16px,#fff);
+  }
+}
+.selectSystem{
+  width:310px;
+  height:220px;
+  float: left;
+  position: relative;
+  @include set-margin(top,10px);
+  @include set-margin(left,22px);
+  @include set-border(#e0e0e0);
+  @include set-radius(4px);
+  .systemName{
+    width: 100%;
+    height: 28px;
+    padding-left: 10px;
+    @include set-signalBorder(bottom,#e0e0e0);
+    .name{
+      height:28px;
+      line-height: 28px;
+      float: left;
+      @include set-font(14px);
+    }
+    .edit{
+      width:28px;
+      height:28px;
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      @include set-center(28px);
+      border-top-right-radius: 4px;
+      background-color: $defaultColor;
+    }
+  }
+  .device{
+    padding-left:10px;
+    width:100%;
+    height:64px;
+    @include set-signalBorder(bottom);
+    &:nth-child(4){
+      border:0;
+    }
+    .deName{
+      cursor: pointer;
+      color: #fff;
+      @include set-margin(top,32px-15);
+      @include set-margin(right,14px);
+      width: 63px;
+      height: 30px;
+      float: left;
+      @include set-center(30px);
+      background-image: url("../../images/productMode/background.png");
+    }
+    .picture{
+      float: left;
+      width:51px;
+      height:51px;
+      @include set-radius(51px);
+      @include set-margin(top,30px-26px);
+      @include set-margin(right,18px);
+      background-color: rgb(221,234,242);
+      position: relative;
+      div{
+        position: absolute;
+        width:18px;
+        height: 18px;
+        background-color: $defaultColor;
+        color: #fff;
+        @include set-border(#fff);
+        @include set-radius(100%);
+        @include set-center(15px);
+        top:0px;
+        left:35px;
+      }
+      img{
+        width:51px;
+      }
+    }
+
+  }
+  .colTwo{
+    width: 146px;
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    .device{
+      border:0;
+      .deName{
+        cursor: pointer;
+        line-height: 16px;
+        font-size: 13px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+.second{
+  margin-left: 8px;
+  width:467px;
+  position: relative;
+}
+.publicDevice{
+  @extend .selectSystem;
+  height:108px;
+  .systemInfo{
+    margin-left: 10px;
+    @include set-font(12px);
+    height:18px;
+    line-height:18px;
+    .subName{
+      width:auto;
+    }
+  }
+}
+.auxiliaryDevice{
+  @extend .publicDevice;
+  margin-left: 8px;
+  width:467px;
+  position: relative;
+  .colTwo{
+    width: auto;
+    right: 38px;
+  }
+}
+.saveBtn{
+  width:100px;
+  height: 28px;
+  @include set-center(28px);
+  @include set-radius();
+  position: absolute;
+  right:22px;
+  top:462px;
+  color: #fff;
+  background-color: $defaultColor;
+}
+.modal-dialog{
+  width:436px;
+  top:calc(50% - 333px)!important;
+  .modal-content{
+    height:100%;
+  }
+  .modal-body{
+    overflow-y: inherit;
+    padding:0 35px;
+    border:0;
+    height:100%;
+    .deviceType{
+      width:100%;
+      height:90px;
+      @include set-signalBorder(bottom,#e0e0e0,1px,dotted);
+      .deviceName{
+        width:100%;
+        height: 46px;
+        @include set-font(16px,#30a6e4);
+        padding: 16px 0 10px 3px;
+      }
+      .type{
+        cursor: pointer;
+        width:50px;
+        height:32px;
+        float: left;
+        @include set-center(32px);
+        @include set-font(16px, #0184c9);
+        @include set-radius(5px);
+        margin-right: 20px;
+        @include set-border(#0184c9);
+        &:nth-last-child(1){
+          margin-right: 0;
+        }
+      }
+      .selectedType{
+        background-color: #0184c9;
+        color: #fff;
+      }
+    }
+    .deviceType:nth-last-child(1){
+      border: 0;
+    }
+  }
+  .modal-footer{
+    padding:0;
+    line-height: 64px;
+    text-align: center;
+    .btn{
+      width: 176px;
+      height:43px;
+      background-color: #0184c9;
+      @include set-font(16px,#fff);
+    }
+  }
+}
+#deviceDialog{
+  .type{
+    margin-top: 30px;
+  }
+}
+#confirmDialog{
+  .modal-body{
+    height:auto;
+    padding:0;
+    overflow-y: auto;
+  }
+  .content{
+    background-color: #fff;
+  }
+  .bodyTitle{
+    width:100%;
+    height:60px;
+    @include set-center(60px);
+    //border-bottom:1px solid #bbb;
+  }
+  .modal-footer{
+    padding:15px 25px;
+    .btn{
+      width: (100% - 4)/2;
+      border-radius: 6px;
+    }
+    .btn-primary{
+      background-color: #30a6e4;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "common";
+@import "table";
+.panel-header{
+  width:100%;
+  height:42px;
+  line-height:42px;
+  background-color: #fff;
+  label{
+    margin-left: 18px;
+    margin-right: 5px;
+    float: left;
+  }
+  select{
+    width: 88px;
+    outline:none;
+    height:24px;
+    @include set-border(#e0e0e0);
+    @include set-radius(4px);
+    padding-left: 5px;
+    float: left;
+    margin-top: 9px;
+  }
+  input{
+    @extend select;
+    width:112px;
+  }
+  .searchBtn{
+    border: none;
+    width:60px;
+    height:24px;
+    @include set-margin(top,9px);
+    @include set-margin(left,5px);
+    background-image: url("/src/images/manufacturer/serch_button.png");
+    &:hover{
+      background-image: url("/src/images/manufacturer/serch_hover_click_button.png");
+    }
+  }
+  .addMenuBtn{
+    @extend .searchBtn;
+    padding:0;
+    width: 90px;
+    float: right;
+    margin-right: 18px;
+    @include set-radius(24px);
+    background-color: #2c9ae8;
+    background-image: url("/src/images/manufacturer/addSystem.png");
+    &:hover{
+      background-image: url("/src/images/manufacturer/addSystem.png");
+    }
+  }
+}
+.modal.fade.ng-isolate-scope.in .modal-dialog {
+  top: calc(50% - 295px);
+}
+#dialog{
+  .row{
+    span{
+      float: left;
+      width:25%;
+      line-height:28px;
+    }
+  }
+  .columnMax{
+    input{
+    width: 66% !important;
+    float: left;
+    margin-right: 5px;
+    }
+
+  }
+  .columnMid{
+    @extend .columnMax;
+    input{
+      width: 49% !important;
+    }
+    span{
+      width:42%;
+    }
+  }
+  .columnSma{
+    @extend .columnMax;
+    input{
+      width: 41% !important;
+    }
+    span{
+      width:50%;
+    }
+
+  }
+  select{
+    width: 66%;
+    outline: none;
+    height:28px;
+    line-height:28px;
+    @include set-font(14px,#666);
+    padding-left: 5px;
+    @include set-border(#e0e0e0);
+    @include set-radius(4px);
+  }
+}

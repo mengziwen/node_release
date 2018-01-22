@@ -1,0 +1,45 @@
+@import "common";
+@import "table";
+.panel-header{
+  width:100%;
+  height:42px;
+  line-height:42px;
+  background-color: #f1f1f1;
+  .form-control{
+    width: 158px;
+    height:24px;
+    padding-left: 5px;
+    @include set-font(12px,#999);
+    @include set-margin(top,9px);
+    @include set-margin(right,10px);
+    @include set-margin(left,18px);
+    float: left;
+  }
+  .searchBtn{
+    border: none;
+    display: block;
+    float: left;
+    width:60px;
+    height:24px;
+    @include set-margin(top,9px);
+    background-image: url("/src/images/manufacturer/serch_button.png");
+    &:hover{
+      background-image: url("/src/images/manufacturer/serch_hover_click_button.png");
+    }
+  }
+  .addMenuBtn{
+    @extend .searchBtn;
+    padding:0;
+    width: 90px;
+    float: right;
+    margin-right: 18px;
+    @include set-radius(24px);
+    background-color: #2c9ae8;
+    background-image: url("/src/images/manufacturer/addSystem.png");
+    &:hover{
+      background-image: url("/src/images/manufacturer/addSystem.png");
+    }
+  }
+}
+
+

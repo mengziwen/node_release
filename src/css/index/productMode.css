@@ -1,0 +1,480 @@
+.clearfix {
+  width: 0 !important;
+  height: 0 !important;
+  clear: both; }
+
+.clear::after {
+  content: "";
+  display: block;
+  width: 0 !important;
+  height: 0 !important;
+  clear: both; }
+
+.btn-hover {
+  position: relative;
+  overflow: hidden; }
+  .btn-hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: .1s ease-in-out; }
+  .btn-hover:hover::before {
+    opacity: .12; }
+
+.modal-dialog {
+  width: 430px; }
+
+.modal-content {
+  height: 270px; }
+
+.modal.fade.ng-isolate-scope.in .modal-dialog {
+  top: calc(50% - 135px); }
+
+.modal-header {
+  padding: 0px;
+  border-bottom: 1px solid #e0e0e0;
+  min-height: 16.42857143px;
+  height: 60px;
+  width: 100%;
+  border-top: 4px solid #30a6e4;
+  text-align: center;
+  font-size: 18px;
+  color: #333333; }
+
+.modal-body {
+  width: 100%;
+  margin: 0;
+  height: 210px; }
+
+.modal-title {
+  margin: 0;
+  width: 100%;
+  float: left;
+  height: 57px;
+  line-height: 57px;
+  text-align: center; }
+
+.titleLeft {
+  width: 30px;
+  height: 30px;
+  background-color: #e5e5e5;
+  cursor: pointer;
+  margin-top: 15px !important;
+  float: right;
+  position: absolute;
+  right: 0; }
+
+.titleLeft img {
+  display: block;
+  position: absolute;
+  left: -15px; }
+
+.bodyTitle {
+  width: 394px;
+  height: 33px;
+  margin: 0 auto;
+  border-bottom: 1px dotted #e0e0e0; }
+
+.bodyTitle .hitch {
+  font-size: 16px;
+  color: #ef6e5b;
+  border-bottom: 2px solid;
+  width: 33px;
+  height: 33px; }
+
+.hitchDevice {
+  font-size: 16px;
+  color: #333333;
+  margin-top: 15px;
+  margin-bottom: 10px; }
+
+.deviceNum, .deviceName {
+  float: left;
+  margin-right: 20px; }
+
+.modal-footer .btn-default {
+  width: 48%;
+  border-radius: 6px;
+  background-color: #bbbbbb !important;
+  color: #fff !important;
+  border: 0; }
+
+.schedule {
+  width: 174px;
+  height: 30px;
+  position: relative;
+  top: 13px;
+  left: 628px;
+  margin-bottom: 26px;
+  border: 1px solid #2c9ae8 !important;
+  border-radius: 4px; }
+  .schedule .phase {
+    border: 0 !important;
+    font-size: 16px;
+    float: left;
+    height: 28px;
+    color: #2c9ae8;
+    padding: 0;
+    width: 86px;
+    margin: 0;
+    border-right: 0;
+    line-height: 28px;
+    text-align: center; }
+    .schedule .phase:hover {
+      background-color: #fff !important;
+      color: #2c9ae8;
+      text-shadow: 1px 1px 1px #2c9ae8; }
+  .schedule .phaseOne {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .schedule .phaseTwo {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+  .schedule .active, .schedule .active:hover {
+    border: 0;
+    color: #fff !important;
+    background-color: #2c9ae8 !important;
+    cursor: default; }
+
+.schPanel {
+  position: relative;
+  margin: 10px;
+  height: calc(100% - 20px);
+  border: 1px solid #2c9ae8 !important; }
+  .schPanel .nav-tabs {
+    width: 174px;
+    height: 30px;
+    position: relative;
+    top: 13px;
+    left: 621px;
+    margin-bottom: 26px;
+    border: 1px solid #2c9ae8 !important;
+    border-radius: 4px; }
+    .schPanel .nav-tabs li a, .schPanel .nav-tabs li li.active:focus {
+      border: 0 !important;
+      font-size: 16px;
+      display: inline-block;
+      height: 28px;
+      color: #2c9ae8;
+      padding: 0;
+      width: 86px;
+      margin: 0;
+      border-right: 0;
+      line-height: 28px;
+      text-align: center; }
+      .schPanel .nav-tabs li a:hover, .schPanel .nav-tabs li li.active:hover:focus {
+        background-color: #fff !important;
+        color: #2c9ae8;
+        text-shadow: 1px 1px 1px #2c9ae8; }
+    .schPanel .nav-tabs li.active {
+      border: 0; }
+      .schPanel .nav-tabs li.active a, .schPanel .nav-tabs li.active li.active:focus {
+        border: 0;
+        border-radius: 0;
+        color: #fff !important;
+        background-color: #2c9ae8 !important;
+        cursor: default; }
+
+.selectTitle {
+  position: absolute;
+  font-size: 16px;
+  color: #333;
+  left: calc(50% - 64px);
+  top: 13px; }
+
+.schedule {
+  width: 174px;
+  height: 30px;
+  position: relative;
+  top: 13px;
+  left: 628px;
+  margin-bottom: 26px;
+  border: 1px solid #2c9ae8 !important;
+  border-radius: 4px; }
+  .schedule .phase {
+    border: 0 !important;
+    font-size: 16px;
+    float: left;
+    height: 28px;
+    color: #2c9ae8;
+    padding: 0;
+    width: 86px;
+    margin: 0;
+    border-right: 0;
+    line-height: 28px;
+    text-align: center; }
+    .schedule .phase:hover {
+      background-color: #fff !important;
+      color: #2c9ae8;
+      text-shadow: 1px 1px 1px #2c9ae8; }
+  .schedule .phaseOne {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .schedule .phaseTwo {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+  .schedule .active, .schedule .active:hover {
+    border: 0;
+    color: #fff !important;
+    background-color: #2c9ae8 !important;
+    cursor: default; }
+
+.selectList {
+  width: 786px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 6px; }
+  .selectList label {
+    height: 38px;
+    line-height: 38px;
+    margin: 0 12px;
+    float: left;
+    font-size: 16px;
+    color: #333; }
+  .selectList .arrow {
+    width: 24px;
+    height: 26px;
+    position: relative;
+    float: right;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: url("../../images/productMode/scqkxz_device_3.png") no-repeat scroll 8px center transparent;
+    background-color: #e0e0e0; }
+  .selectList .selectBox {
+    width: 229px;
+    height: 28px;
+    float: left;
+    margin-right: 9px;
+    margin-top: 5px;
+    position: relative; }
+  .selectList select {
+    float: left;
+    outline: none;
+    width: 229px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 4px;
+    font-size: 12px;
+    color: #333;
+    border-radius: 4px;
+    border-color: #e0e0e0;
+    position: absolute;
+    background-color: transparent;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: 10; }
+  .selectList select::-ms-expand {
+    background-color: #bbb; }
+  .selectList button {
+    margin-top: 5px;
+    float: left;
+    width: 86px;
+    height: 28px;
+    background-color: #2c9ae8;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff; }
+
+.selectSystem, .publicDevice, .auxiliaryDevice {
+  width: 310px;
+  height: 220px;
+  float: left;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 22px;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 4px; }
+  .selectSystem .systemName, .publicDevice .systemName, .auxiliaryDevice .systemName {
+    width: 100%;
+    height: 28px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e0e0e0; }
+    .selectSystem .systemName .name, .publicDevice .systemName .name, .auxiliaryDevice .systemName .name {
+      height: 28px;
+      line-height: 28px;
+      float: left;
+      font-size: 14px;
+      color: #333; }
+    .selectSystem .systemName .edit, .publicDevice .systemName .edit, .auxiliaryDevice .systemName .edit {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      line-height: 28px;
+      text-align: center;
+      border-top-right-radius: 4px;
+      background-color: #2c9ae8; }
+  .selectSystem .device, .publicDevice .device, .auxiliaryDevice .device {
+    padding-left: 10px;
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid #e0e0e0; }
+    .selectSystem .device:nth-child(4), .publicDevice .device:nth-child(4), .auxiliaryDevice .device:nth-child(4) {
+      border: 0; }
+    .selectSystem .device .deName, .publicDevice .device .deName, .auxiliaryDevice .device .deName {
+      cursor: pointer;
+      color: #fff;
+      margin-top: 17px;
+      margin-right: 14px;
+      width: 63px;
+      height: 30px;
+      float: left;
+      line-height: 30px;
+      text-align: center;
+      background-image: url("../../images/productMode/background.png"); }
+    .selectSystem .device .picture, .publicDevice .device .picture, .auxiliaryDevice .device .picture {
+      float: left;
+      width: 51px;
+      height: 51px;
+      border-radius: 51px;
+      margin-top: 4px;
+      margin-right: 18px;
+      background-color: #ddeaf2;
+      position: relative; }
+      .selectSystem .device .picture div, .publicDevice .device .picture div, .auxiliaryDevice .device .picture div {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background-color: #2c9ae8;
+        color: #fff;
+        border: 1px solid #fff !important;
+        border-radius: 100%;
+        line-height: 15px;
+        text-align: center;
+        top: 0px;
+        left: 35px; }
+      .selectSystem .device .picture img, .publicDevice .device .picture img, .auxiliaryDevice .device .picture img {
+        width: 51px; }
+  .selectSystem .colTwo, .publicDevice .colTwo, .auxiliaryDevice .colTwo {
+    width: 146px;
+    position: absolute;
+    top: 28px;
+    right: 30px; }
+    .selectSystem .colTwo .device, .publicDevice .colTwo .device, .auxiliaryDevice .colTwo .device {
+      border: 0; }
+      .selectSystem .colTwo .device .deName, .publicDevice .colTwo .device .deName, .auxiliaryDevice .colTwo .device .deName {
+        cursor: pointer;
+        line-height: 16px;
+        font-size: 13px;
+        margin-right: 4px; }
+
+.second {
+  margin-left: 8px;
+  width: 467px;
+  position: relative; }
+
+.publicDevice, .auxiliaryDevice {
+  height: 108px; }
+  .publicDevice .systemInfo, .auxiliaryDevice .systemInfo {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #333;
+    height: 18px;
+    line-height: 18px; }
+    .publicDevice .systemInfo .subName, .auxiliaryDevice .systemInfo .subName {
+      width: auto; }
+
+.auxiliaryDevice {
+  margin-left: 8px;
+  width: 467px;
+  position: relative; }
+  .auxiliaryDevice .colTwo {
+    width: auto;
+    right: 38px; }
+
+.saveBtn {
+  width: 100px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 4px;
+  position: absolute;
+  right: 22px;
+  top: 462px;
+  color: #fff;
+  background-color: #2c9ae8; }
+
+.modal-dialog {
+  width: 436px;
+  top: calc(50% - 333px) !important; }
+  .modal-dialog .modal-content {
+    height: 100%; }
+  .modal-dialog .modal-body {
+    overflow-y: inherit;
+    padding: 0 35px;
+    border: 0;
+    height: 100%; }
+    .modal-dialog .modal-body .deviceType {
+      width: 100%;
+      height: 90px;
+      border-bottom: 1px dotted #e0e0e0; }
+      .modal-dialog .modal-body .deviceType .deviceName {
+        width: 100%;
+        height: 46px;
+        font-size: 16px;
+        color: #30a6e4;
+        padding: 16px 0 10px 3px; }
+      .modal-dialog .modal-body .deviceType .type {
+        cursor: pointer;
+        width: 50px;
+        height: 32px;
+        float: left;
+        line-height: 32px;
+        text-align: center;
+        font-size: 16px;
+        color: #0184c9;
+        border-radius: 5px;
+        margin-right: 20px;
+        border: 1px solid #0184c9 !important; }
+        .modal-dialog .modal-body .deviceType .type:nth-last-child(1) {
+          margin-right: 0; }
+      .modal-dialog .modal-body .deviceType .selectedType {
+        background-color: #0184c9;
+        color: #fff; }
+    .modal-dialog .modal-body .deviceType:nth-last-child(1) {
+      border: 0; }
+  .modal-dialog .modal-footer {
+    padding: 0;
+    line-height: 64px;
+    text-align: center; }
+    .modal-dialog .modal-footer .btn {
+      width: 176px;
+      height: 43px;
+      background-color: #0184c9;
+      font-size: 16px;
+      color: #fff; }
+
+#deviceDialog .type {
+  margin-top: 30px; }
+
+#confirmDialog .modal-body {
+  height: auto;
+  padding: 0;
+  overflow-y: auto; }
+#confirmDialog .content {
+  background-color: #fff; }
+#confirmDialog .bodyTitle {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center; }
+#confirmDialog .modal-footer {
+  padding: 15px 25px; }
+  #confirmDialog .modal-footer .btn {
+    width: 48%;
+    border-radius: 6px; }
+  #confirmDialog .modal-footer .btn-primary {
+    background-color: #30a6e4;
+    color: #fff; }
+
+/*# sourceMappingURL=productMode.css.map */

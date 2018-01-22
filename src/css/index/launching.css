@@ -1,0 +1,270 @@
+.deviceContent{
+    /*height:467px;*/
+    border:1px solid #2c9ae8;
+    width: 821px;
+    height:100%;
+    /*box-shadow: 1px 1px 1px 1px #2c9ae8;*/
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.illustrate{
+    padding-left: 18px;
+    height:28px;
+    font-size: 14px;
+    line-height:32px;
+    color: #333333;
+    margin-top: 20px;
+}
+.illBlock{
+    float: left;
+    line-height: 28px;
+}
+.explain{
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+.word{
+    display: inline-block;
+    line-height:28px;
+}
+.wordtitle{
+    float: left;
+}
+.col{
+    border:1px solid #e5e3e3;
+}
+.normal{
+    border:1px solid #249f01;
+}
+.normal .deviceName{
+    background-color:#249f01;
+}
+.normal .refresh{
+    color: #249f01;
+}
+.unusual{
+    border:1px solid #ef6e5b;
+}
+.unusual .deviceName{
+    background-color:#ef6e5b;
+}
+.unusual .refresh{
+    color: #ef6e5b;;
+}
+.notStart{
+    border:1px solid #bbbbbb;
+}
+.notStart .deviceName{
+    background-color:#bbbbbb;
+}
+.notStart .refresh{
+    color: #bbbbbb;;
+}
+.col{
+    width:100px;
+    height:74px;
+    border-radius: 5px;
+}
+.state{
+    vertical-align: middle;
+    display: table-cell;
+    width: 98px;
+    height: 72px;
+    line-height:78px;
+    text-align: center;
+}
+.card{
+    margin-top: 20px;
+    padding-left: 15px;
+    float: left;
+}
+.deviceName,.refresh{
+    width: 100%;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.deviceName{
+    height:25px;
+    line-height: 25px;
+}
+.refresh{
+    height:49px;
+    line-height: 49px;
+    font-size: 20px;
+}
+.panelContent{
+    width: 822px;
+    height:calc(100% - 10px);
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0;
+    background-color: #fff;
+}
+.panel.panel-default {
+    border: 0;
+}
+.myList{
+    margin: 0;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color: #2c9ae8;
+    border: 1px solid #2c9ae8;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+.nav-tabs > .ng-isolate-scope :hover {
+    border: 1px solid #2c9ae8;
+    background-color: white;
+    color:#2c9ae8;
+    cursor: default;
+    border-right: 0;
+    text-shadow:1px 1px 1px #2c9ae8 ;
+}
+
+
+.nav > li > a {
+    border-radius: 0;
+    font-size: 14px;
+    display: block;
+    float: left;
+    height:32px;
+    line-height:32px;
+    color: #2c9ae8;
+    text-align: center;
+    border:1px solid #2c9ae8;
+    border-bottom: 0;
+    padding: 0;
+    width: 144px;
+    margin: 0;
+    border-right:0;
+}
+.tab-content{
+    height:calc(100% - 32px);
+}
+.tab-content > .tab-pane,.b-1px,.myList{
+    height:100%;
+    border:0px;
+}
+
+/*其他系统*/
+.otherSystem{
+padding-top:20px;
+}
+.otherSystem .card{
+    margin-top: 15px;
+}
+.otherSystem .title{
+    color: #000;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+/*仓储系统*/
+.storageBlock{
+    width:399px;
+    border-top:1px solid #e5e3e3;
+    height:116px;
+    line-height:116px;
+    float: left;
+    padding-left: 24px;
+    border-right: 1px solid #e5e3e3;
+}
+.storageBlock .words{
+    width:97px;
+    float: left;
+    font-size: 18px;
+}
+.storageBlock:nth-child(even){
+    width:420px;
+    padding-left: 44px;
+    border-right: 0;
+ }
+.storageBlock:nth-child(n+5){
+    border-bottom: 1px solid #e5e3e3;
+}
+.storageBlock canvas{
+    margin-top: 10px;
+    margin-right: 26px;
+}
+
+.modal-dialog{
+    width:430px;
+}
+.modal-content{
+    height:270px;
+}
+.modal.fade.ng-isolate-scope.in .modal-dialog{
+    top:calc(50% - 135px)
+}
+.modal-header {
+    padding: 0px;
+    border-bottom: 1px solid #e0e0e0;
+    min-height: 16.42857143px;
+    height: 60px;
+    width: 430px;
+    border-top: 4px solid #30a6e4;
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+}
+.modal-body{
+    width:100%;
+    margin: 0;
+    height: 210px;
+    overflow-y: auto;
+}
+.modal-title {
+    margin: 0;
+    width: 385px;
+    float: left;
+    height:57px;
+    line-height: 57px;
+    text-align: center;
+}
+.titleLeft{
+    width: 30px;
+    height: 30px;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    margin-top: 15px;
+    float: right;
+    position: relative;
+}
+.titleLeft img{
+    display: block;
+    position: absolute;
+    left: -15px;
+}
+.bodyTitle{
+    width: 394px;
+    height: 33px;
+    margin: 0 auto;
+    border-bottom: 1px dotted #e0e0e0;
+}
+.bodyTitle .hitch{
+    font-size: 16px;
+    color: #ef6e5b;
+    border-bottom: 2px solid;
+    width: 33px;
+    height: 33px;
+}
+.hitchDevice{
+    font-size: 16px;
+    color: #333333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.deviceNum,.deviceName{
+    float: left;
+    margin-right: 20px;
+}

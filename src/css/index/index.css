@@ -1,0 +1,111 @@
+/*.overview {*/
+    /*background-image: url('/images/management/background-block.png'), url('/images/management/background.jpg');*/
+/*}*/
+/*div{*/
+    /*background-color: transparent;*/
+    /*color: white;*/
+/*}*/
+/*ul{*/
+    /*background-color: transparent;*/
+/*}*/
+/*button{*/
+    /*background-color: rgba(242, 242, 242, 0.1);*/
+    /*color: white;*/
+/*}*/
+/*.main-nav li {*/
+    /*margin: 8px 0;*/
+/*}*/
+/*.main-nav li a{*/
+    /*background-color: rgba(242, 242, 242, 0.2);*/
+    /*font-size: 14px;*/
+    /*margin: 5px 0;*/
+/*}*/
+/*.main-nav li a i{*/
+    /*background-color: rgba(242, 242, 242, 0.1);*/
+    /*color: white;*/
+/*}*/
+/*.skin a{*/
+    /*background-color: transparent;*/
+    /*color: white;*/
+/*}*/
+/*.skin a:hover{*/
+    /*color: white;*/
+/*}*/
+/*.main-nav li a:hover{*/
+    /*background-color: rgba(242, 242, 242, 0.1);*/
+    /*color: white;*/
+/*}*/
+
+/*.main-nav li a{*/
+    /*background-color: rgba(242, 242, 242, 0.1);*/
+    /*color: white;*/
+/*}*/
+/*.main-nav li a div span{*/
+    /*color: white;*/
+/*}*/
+/*.main-nav li.active a{*/
+    /*background-color: rgba(242, 242, 242, 0.1);*/
+    /*color: white;*/
+    /*border-color: rgba(0,6,20,1);*/
+/*}*/
+
+/*ul.nav-children li a{*/
+    /*background-color: transparent;*/
+    /*color: white;*/
+/*}*/
+/*body.themeBlue ul.nav-children li.active a{*/
+    /*background-color: transparent;*/
+    /*border-color: rgba(242, 242, 242,0.2);*/
+/*}*/
+/*ul.nav-children li{*/
+    /*background-color: transparent;*/
+    /*color: white;*/
+/*}*/
+.panel.panel-default{
+    border: 0px;
+}
+.table.table-striped tbody tr:nth-of-type(odd){
+    background-color: rgba(242, 242, 242, 0.1)
+}
+.table.table-striped tbody tr:nth-of-type(even){
+    background-color: transparent;
+}
+
+ul.pagination li a{
+    background-color: transparent;
+    border: 0px;
+    color: white;
+}
+
+.app-aside{
+    padding:15px 15px 15px 0;
+
+}
+.inside{
+    padding: 15px 10px;
+    height: 100%;
+    background-image: url(/src/images/common/top_c_left.png),
+    url(/src/images/common/top_c_right.png),
+    url(/src/images/common/bottom_left.png),
+    url(/src/images/common/bottom_right.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left top, right top, left bottom, right bottom;
+}
+.table tbody tr td{
+    border-color:rgba(0,6,20,1);
+}
+.modal-dialog{
+    background-image: url('/src/images/management/background-block.png'), url('/src/images/login/login-bg.jpg') ;
+    /*background-repeat: no-repeat, no-repeat;*/
+}
+.modal.fade.ng-isolate-scope.in{
+    background-color:rgba(242, 242, 242, 0.2);
+
+}
+.modal.fade.ng-isolate-scope.in .modal-dialog{
+    position:absolute;
+    left:calc(50% - 300px);
+}
+
+
+

@@ -1,0 +1,148 @@
+@import "common";
+@import "table";
+.viewPanel{
+  position: relative;
+  margin: 10px;
+  height: calc(100% - 20px);
+  border: 1px solid #2c9ae8 !important;
+  .panel{
+    margin: 0;
+    border:none;
+    height:50%;
+    .panel-heading{
+      padding:0px 18px;
+      position: relative;
+      h5{
+        margin: 0;
+        height: 32px;
+        line-height: 32px;
+        @include set-font(16px,#333);
+        width:118px;
+        border-bottom:2px solid $defaultColor;
+      }
+      .addBtn{
+        position: absolute;
+        top:4px;
+        right:18px;
+        height:24px;
+        padding: 0;
+        width: 90px;
+        border-radius: 24px;
+        background-color: #2c9ae8;
+      }
+      .addSystem{
+        background-image: url(/src/images/transformer/byqgl_tjxt_button.png);
+        &:hover{
+          background-image: url(/src/images/transformer/byqgl_tjxt_hover_button.png);
+        }
+      }
+      .addAddress{
+        background-image: url(/src/images/transformer/byqgl_tjwz_button.png);
+        &:hover{
+          background-image: url(/src/images/transformer/byqgl_tjwz_hover_button.png);
+        }
+      }
+    }
+    .blocks{
+      padding:16px 0 0 18px;
+      .systems{
+        position: relative;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        width:112px;
+        height:30px;
+        line-height: 30px;
+        float: left;
+        color: #fff;
+        background-image: url(/src/images/transformer/byqgl_button.png);
+        &:hover{
+          background-image: url(/src/images/transformer/byqgl_hover_button.png);
+        }
+        .systemNames{
+          width:65%;
+          text-align: center;
+          float: left;
+        }
+        .setting{
+          width:35%;
+          float: left;
+          z-index: 5;
+          height:100%;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        .setting:hover + .settingInfo{
+          display: block;
+        }
+        .settingInfo{
+          display: none;
+          cursor: pointer;
+          position: absolute;
+          width: 140px;
+          height:65px;
+          top: -18px;
+          left: 93px;
+          z-index: 10;
+          background-image: url(/src/images/transformer/byqgl_hover_xiugai_shanchu_button.png);
+          &:hover{
+            display: block;
+          }
+          span{
+            @include set-font(14px,#666);
+            margin-left:10px;
+            line-height:65px;
+            &:hover{
+              color: #0471be;
+              @include set-signalBorder(bottom,1px,#0471be);
+            }
+          }
+          .edit{
+            margin-left:40px;
+          }
+        }
+      }
+      .longSystem{
+        width:191px;
+        background-image: url(/src/images/transformer/byqgl_button2.png);
+        &:hover{
+          background-image: url(/src/images/transformer/byqgl_hover_button2.png);
+        }
+        .systemNames{
+          width:80%;
+        }
+        .setting{
+          width:20%;
+        }
+        .settingInfo{
+          left:172px;
+        }
+      }
+    }
+  }
+}
+#dialog,#dialog1{
+  .bodyContent{
+    height:89px;
+    .content{
+      height:100%;
+      padding:30px 35px!important;
+      .row{
+        height: 28px !important;
+        .transformerToast{
+          margin-left: 66px!important;
+        }
+        input{
+          width: 77% !important;
+        }
+        .signal{
+          margin: 0 !important;
+        }
+        p{
+          text-align: center;
+          @include set-font(16px,#333);
+        }
+      }
+    }
+  }
+}

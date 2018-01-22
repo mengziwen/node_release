@@ -1,0 +1,64 @@
+@import "common";
+.modal-content{
+  height:auto;
+}
+.modal.fade.ng-isolate-scope.in .modal-dialog{
+  top:calc(50% - 200px)
+}
+
+#dialog {
+  .modal-body {
+    height: auto;
+    padding: 0;
+    overflow-y: auto;
+    @include set-signalBorder(top, #e5e5e5);
+    .bodyContent {
+      width: 100%;
+      .content {
+        background-color: #fff;
+        padding: 0 35px;
+        .plusRegion{
+          width:100%;
+          margin: 10px 0;
+          background-color: $defaultColor;
+          color: #fff;
+          height: 36px;
+          @include set-radius(5px);
+          @include set-center(36px);
+        }
+        .plus{
+          width: 100%;
+          height:60px;
+          //@include set-center(60px);
+          @include set-signalBorder(top,#e0e0e0,1px,dashed);
+          @include set-signalBorder(bottom,#e0e0e0,1px,dashed);
+          input{
+            background-color: rgb(238,238,238);
+            outline: none;
+            border: 1px solid #000;
+            padding-left: 5px;
+            width: 100px;
+            margin-top: 18px;
+          }
+          input:nth-of-type(odd){
+            width: 80px;
+          }
+        }
+        .areas{
+          width: 100%;
+          height:90px;
+        }
+      }
+    }
+    .modal-footer {
+      padding: 15px 25px;
+      .btn {
+        width: (100% - 4)/2;
+        border-radius: 6px;
+        background-color: #30a6e4 !important;
+        color: #fff;
+        height: 42px;
+      }
+    }
+  }
+}

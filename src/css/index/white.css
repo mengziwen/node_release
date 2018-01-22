@@ -1,0 +1,17 @@
+
+.table.table-striped tbody tr:nth-of-type(odd){
+    background-color: #eeeeee;
+}
+.table.table-striped tbody tr:nth-of-type(even){
+    background-color: #ffffff;
+}
+table td{
+    color:#544d4d;
+}
+table td i{
+    color:#544d4d;
+}
+.table > thead > tr > th{
+    color:#544d4d;
+    /*background-color: #f1f5ff;*/
+}

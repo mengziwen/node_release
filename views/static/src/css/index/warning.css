@@ -1,0 +1,668 @@
+.clearfix {
+  width: 0 !important;
+  height: 0 !important;
+  clear: both; }
+
+.clear::after {
+  content: "";
+  display: block;
+  width: 0 !important;
+  height: 0 !important;
+  clear: both; }
+
+.btn-hover {
+  position: relative;
+  overflow: hidden; }
+  .btn-hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: .1s ease-in-out; }
+  .btn-hover:hover::before {
+    opacity: .12; }
+
+.modal-dialog {
+  width: 430px; }
+
+.modal-content {
+  height: 270px; }
+
+.modal.fade.ng-isolate-scope.in .modal-dialog {
+  top: calc(50% - 135px); }
+
+.modal-header {
+  padding: 0px;
+  border-bottom: 1px solid #e0e0e0;
+  min-height: 16.42857143px;
+  height: 60px;
+  width: 100%;
+  border-top: 4px solid #30a6e4;
+  text-align: center;
+  font-size: 18px;
+  color: #333333; }
+
+.modal-body {
+  width: 100%;
+  margin: 0;
+  height: 210px; }
+
+.modal-title {
+  margin: 0;
+  width: 100%;
+  float: left;
+  height: 57px;
+  line-height: 57px;
+  text-align: center; }
+
+.titleLeft {
+  width: 30px;
+  height: 30px;
+  background-color: #e5e5e5;
+  cursor: pointer;
+  margin-top: 15px !important;
+  float: right;
+  position: absolute;
+  right: 0; }
+
+.titleLeft img {
+  display: block;
+  position: absolute;
+  left: -15px; }
+
+.bodyTitle {
+  width: 394px;
+  height: 33px;
+  margin: 0 auto;
+  border-bottom: 1px dotted #e0e0e0; }
+
+.bodyTitle .hitch {
+  font-size: 16px;
+  color: #ef6e5b;
+  border-bottom: 2px solid;
+  width: 33px;
+  height: 33px; }
+
+.hitchDevice {
+  font-size: 16px;
+  color: #333333;
+  margin-top: 15px;
+  margin-bottom: 10px; }
+
+.deviceNum, .deviceName {
+  float: left;
+  margin-right: 20px; }
+
+.modal-footer .btn-default {
+  width: 48%;
+  border-radius: 6px;
+  background-color: #bbbbbb !important;
+  color: #fff !important;
+  border: 0; }
+
+.schedule {
+  width: 174px;
+  height: 30px;
+  position: relative;
+  top: 13px;
+  left: 628px;
+  margin-bottom: 26px;
+  border: 1px solid #2c9ae8 !important;
+  border-radius: 4px; }
+  .schedule .phase {
+    border: 0 !important;
+    font-size: 16px;
+    float: left;
+    height: 28px;
+    color: #2c9ae8;
+    padding: 0;
+    width: 86px;
+    margin: 0;
+    border-right: 0;
+    line-height: 28px;
+    text-align: center; }
+    .schedule .phase:hover {
+      background-color: #fff !important;
+      color: #2c9ae8;
+      text-shadow: 1px 1px 1px #2c9ae8; }
+  .schedule .phaseOne {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .schedule .phaseTwo {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+  .schedule .active, .schedule .active:hover {
+    border: 0;
+    color: #fff !important;
+    background-color: #2c9ae8 !important;
+    cursor: default; }
+
+.schPanel {
+  position: relative;
+  margin: 10px;
+  height: calc(100% - 20px);
+  border: 1px solid #2c9ae8 !important; }
+  .schPanel .nav-tabs {
+    width: 174px;
+    height: 30px;
+    position: relative;
+    top: 13px;
+    left: 621px;
+    margin-bottom: 26px;
+    border: 1px solid #2c9ae8 !important;
+    border-radius: 4px; }
+    .schPanel .nav-tabs li a, .schPanel .nav-tabs li li.active:focus {
+      border: 0 !important;
+      font-size: 16px;
+      display: inline-block;
+      height: 28px;
+      color: #2c9ae8;
+      padding: 0;
+      width: 86px;
+      margin: 0;
+      border-right: 0;
+      line-height: 28px;
+      text-align: center; }
+      .schPanel .nav-tabs li a:hover, .schPanel .nav-tabs li li.active:hover:focus {
+        background-color: #fff !important;
+        color: #2c9ae8;
+        text-shadow: 1px 1px 1px #2c9ae8; }
+    .schPanel .nav-tabs li.active {
+      border: 0; }
+      .schPanel .nav-tabs li.active a, .schPanel .nav-tabs li.active li.active:focus {
+        border: 0;
+        border-radius: 0;
+        color: #fff !important;
+        background-color: #2c9ae8 !important;
+        cursor: default; }
+
+.facContent {
+  margin: 0 auto;
+  width: 1220px; }
+
+* {
+  font-size: 14px; }
+
+.ivu-message {
+  bottom: 100px;
+  top: unset !important; }
+  .ivu-message .ivu-message-notice .ivu-message-notice-content {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    color: #fff; }
+
+.ivu-table thead tr > th {
+  background-color: #2c9ae8;
+  color: #fff;
+  text-align: center; }
+.ivu-table .ivu-table-cell {
+  text-align: center;
+  white-space: nowrap; }
+.ivu-table .ivu-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #2c9ae8 !important; }
+  .ivu-table .ivu-checkbox .ivu-checkbox-inner {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    top: 1px; }
+    .ivu-table .ivu-checkbox .ivu-checkbox-inner:after {
+      transform: rotate(0) scale(0) !important;
+      background-color: #2c9ae8 !important; }
+.ivu-table tbody tr:hover {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1); }
+
+.menuTitle .title div > span a, .menuTitle .title div > span .schPanel .nav-tabs li.active:focus, .schPanel .nav-tabs .menuTitle .title div > span li.active:focus {
+  display: block;
+  height: 34px;
+  font-size: 14px;
+  padding-right: 10px;
+  width: auto; }
+  .menuTitle .title div > span a:hover, .menuTitle .title div > span .schPanel .nav-tabs li.active:hover:focus, .schPanel .nav-tabs .menuTitle .title div > span li.active:hover:focus {
+    color: #2c9ae8; }
+.menuTitle .title div > span .router-link-active {
+  width: calc(100% + 11px);
+  background-color: white;
+  border: 1px solid #2c9ae8 !important;
+  padding-right: 9px;
+  border-right: 1px solid #fff !important;
+  z-index: 10;
+  position: relative; }
+
+.content-view {
+  float: left;
+  width: calc(100% - 178px);
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  height: calc(100% - 20px); }
+  .content-view .router-view {
+    height: 100%; }
+    .content-view .router-view .leftAside {
+      height: 100%;
+      width: 190px;
+      float: left;
+      border: 1px solid #2c9ae8; }
+      .content-view .router-view .leftAside .inside {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px dotted #bbbbbb;
+        line-height: 32px;
+        text-align: center; }
+        .content-view .router-view .leftAside .inside:hover a, .content-view .router-view .leftAside .inside:hover .schPanel .nav-tabs li.active:focus, .schPanel .nav-tabs .content-view .router-view .leftAside .inside:hover li.active:focus {
+          color: #2c9ae8; }
+        .content-view .router-view .leftAside .inside:hover .router-link-active {
+          color: #fff; }
+      .content-view .router-view .leftAside .router-link-active {
+        display: block;
+        background: #2c9ae8;
+        color: #fff;
+        position: relative;
+        width: 192px;
+        height: 100%;
+        left: -10px; }
+        .content-view .router-view .leftAside .router-link-active .triangle_border_right {
+          display: block; }
+      .content-view .router-view .leftAside .triangle_border_right {
+        width: 0;
+        height: 0;
+        border-width: 6px 0 6px 6px;
+        border-style: solid;
+        border-color: transparent transparent transparent #2c9ae8;
+        position: absolute;
+        top: 10px;
+        left: 192px;
+        display: none; }
+  .content-view nav {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 60px);
+    border: 1px solid #e0e0e0; }
+    .content-view nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end; }
+      .content-view nav ul li {
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        width: 42px; }
+        .content-view nav ul li a, .content-view nav ul li .schPanel .nav-tabs li.active:focus, .schPanel .nav-tabs .content-view nav ul li li.active:focus {
+          color: #2c9ae8;
+          font-size: 16px; }
+          .content-view nav ul li a:hover, .content-view nav ul li .schPanel .nav-tabs li.active:hover:focus, .schPanel .nav-tabs .content-view nav ul li li.active:hover:focus {
+            color: #0055b3;
+            background-color: #eeeeee;
+            border-color: #dddddd; }
+  .content-view .content {
+    position: relative;
+    float: left;
+    border: 1px solid #2c9ae8 !important;
+    margin-left: 10px;
+    width: calc(100% - 204px);
+    height: 100%; }
+    .content-view .content .content-title {
+      height: 33px;
+      line-height: 33px;
+      padding-left: 18px;
+      border-bottom: 1px solid #efdddd;
+      color: #2c9ae8;
+      font-size: 16px;
+      margin: 10px 0; }
+    .content-view .content .addBtn {
+      position: relative;
+      top: 4px;
+      left: 91%;
+      height: 24px;
+      padding: 0;
+      width: 115px;
+      border-radius: 24px;
+      background-color: #2c9ae8; }
+    .content-view .content .addSystem {
+      color: white;
+      line-height: 24px;
+      text-align: right;
+      padding-right: 5px; }
+      .content-view .content .addSystem img {
+        position: absolute;
+        left: 4px;
+        top: 2.5px; }
+    .content-view .content .blocks {
+      padding: 16px 0 0 18px;
+      overflow-y: scroll;
+      margin-top: 15px;
+      max-height: 86%; }
+      .content-view .content .blocks .paraType {
+        position: relative;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        width: 112px;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        color: #fff;
+        background-image: url(/src/images/warning/byqgl_button.png); }
+        .content-view .content .blocks .paraType:hover {
+          background-image: url(/src/images/warning/byqgl_hover_button.png); }
+        .content-view .content .blocks .paraType .paraTypeNames {
+          width: 65%;
+          text-align: center;
+          float: left; }
+        .content-view .content .blocks .paraType .setting {
+          width: 35%;
+          float: left;
+          z-index: 5;
+          height: 100%; }
+          .content-view .content .blocks .paraType .setting:hover {
+            cursor: pointer; }
+        .content-view .content .blocks .paraType .setting:hover + .settingInfo {
+          display: block; }
+        .content-view .content .blocks .paraType .settingInfo {
+          display: none;
+          cursor: pointer;
+          position: absolute;
+          width: 140px;
+          height: 65px;
+          top: -18px;
+          left: 93px;
+          z-index: 10;
+          background-image: url(/src/images/warning/byqgl_hover_xiugai_shanchu_button.png); }
+          .content-view .content .blocks .paraType .settingInfo:hover {
+            display: block; }
+          .content-view .content .blocks .paraType .settingInfo span {
+            font-size: 14px;
+            color: #666;
+            margin-left: 10px;
+            line-height: 65px; }
+            .content-view .content .blocks .paraType .settingInfo span:hover {
+              color: #0471be;
+              border-bottom: #0471be solid 1px; }
+          .content-view .content .blocks .paraType .settingInfo .edit {
+            margin-left: 40px; }
+      .content-view .content .blocks .longSystem {
+        width: 191px;
+        background-image: url(/src/images/warning/byqgl_button2.png); }
+        .content-view .content .blocks .longSystem:hover {
+          background-image: url(/src/images/warning/byqgl_hover_button2.png); }
+        .content-view .content .blocks .longSystem .paraTypeNames {
+          width: 80%; }
+        .content-view .content .blocks .longSystem .setting {
+          width: 20%; }
+        .content-view .content .blocks .longSystem .settingInfo {
+          left: 172px; }
+  .content-view .paraTypeAlert .ivu-poptip .ivu-poptip-content, .content-view .configure .ivu-poptip .ivu-poptip-content, .content-view .parameter .ivu-poptip .ivu-poptip-content {
+    box-shadow: 0px 0px 1px 2px #e0e0e0;
+    width: 125px;
+    border-radius: 6px; }
+    .content-view .paraTypeAlert .ivu-poptip .ivu-poptip-content .ivu-poptip-arrow::after, .content-view .configure .ivu-poptip .ivu-poptip-content .ivu-poptip-arrow::after, .content-view .parameter .ivu-poptip .ivu-poptip-content .ivu-poptip-arrow::after {
+      border-bottom-color: #e0e0e0; }
+    .content-view .paraTypeAlert .ivu-poptip .ivu-poptip-content .ivu-poptip-title, .content-view .configure .ivu-poptip .ivu-poptip-content .ivu-poptip-title, .content-view .parameter .ivu-poptip .ivu-poptip-content .ivu-poptip-title {
+      color: #2c9ae8; }
+    .content-view .paraTypeAlert .ivu-poptip .ivu-poptip-content .ivu-poptip-body-content, .content-view .configure .ivu-poptip .ivu-poptip-content .ivu-poptip-body-content, .content-view .parameter .ivu-poptip .ivu-poptip-content .ivu-poptip-body-content {
+      color: #303030; }
+      .content-view .paraTypeAlert .ivu-poptip .ivu-poptip-content .ivu-poptip-body-content .item, .content-view .configure .ivu-poptip .ivu-poptip-content .ivu-poptip-body-content .item, .content-view .parameter .ivu-poptip .ivu-poptip-content .ivu-poptip-body-content .item {
+        margin-bottom: 10px; }
+  .content-view .paraTypeAlert .ivu-row, .content-view .configure .ivu-row, .content-view .parameter .ivu-row {
+    margin: 10px 18px;
+    line-height: 24px; }
+    .content-view .paraTypeAlert .ivu-row .system, .content-view .configure .ivu-row .system, .content-view .parameter .ivu-row .system {
+      text-align: right; }
+    .content-view .paraTypeAlert .ivu-row .building, .content-view .configure .ivu-row .building, .content-view .parameter .ivu-row .building, .content-view .paraTypeAlert .ivu-row .signal, .content-view .configure .ivu-row .signal, .content-view .parameter .ivu-row .signal {
+      text-align: center; }
+    .content-view .paraTypeAlert .ivu-row .ivu-col, .content-view .configure .ivu-row .ivu-col, .content-view .parameter .ivu-row .ivu-col {
+      margin: 10px 0; }
+      .content-view .paraTypeAlert .ivu-row .ivu-col label, .content-view .configure .ivu-row .ivu-col label, .content-view .parameter .ivu-row .ivu-col label {
+        width: 102px; }
+      .content-view .paraTypeAlert .ivu-row .ivu-col .selects, .content-view .configure .ivu-row .ivu-col .selects, .content-view .parameter .ivu-row .ivu-col .selects {
+        display: inline-block;
+        position: relative;
+        width: calc(100% - 110px); }
+        .content-view .paraTypeAlert .ivu-row .ivu-col .selects select, .content-view .configure .ivu-row .ivu-col .selects select, .content-view .parameter .ivu-row .ivu-col .selects select {
+          width: 100%;
+          position: relative;
+          outline: none;
+          line-height: 24px;
+          padding-left: 5px;
+          color: #303030;
+          height: 24px;
+          border-radius: 5px; }
+        .content-view .paraTypeAlert .ivu-row .ivu-col .selects .line, .content-view .configure .ivu-row .ivu-col .selects .line, .content-view .parameter .ivu-row .ivu-col .selects .line {
+          position: absolute;
+          right: 21px;
+          width: 1px;
+          height: calc(100% - 2px);
+          background-color: #a9a9a9;
+          top: 0; }
+  .content-view .paraTypeAlert .operates, .content-view .configure .operates, .content-view .parameter .operates {
+    display: flex;
+    justify-content: flex-end; }
+    .content-view .paraTypeAlert .operates .operate, .content-view .configure .operates .operate, .content-view .parameter .operates .operate {
+      margin: 0 9px;
+      width: auto;
+      padding: 0 10px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 24px;
+      color: #fff;
+      background-color: #2c9ae8; }
+      .content-view .paraTypeAlert .operates .operate img, .content-view .configure .operates .operate img, .content-view .parameter .operates .operate img {
+        position: relative;
+        top: 3px; }
+      .content-view .paraTypeAlert .operates .operate span, .content-view .configure .operates .operate span, .content-view .parameter .operates .operate span {
+        position: relative;
+        top: -2px; }
+      .content-view .paraTypeAlert .operates .operate:last-child, .content-view .configure .operates .operate:last-child, .content-view .parameter .operates .operate:last-child {
+        margin-right: 0; }
+  .content-view .configure .tabs {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 18px;
+    border: 1px solid #2c9ae8 !important;
+    border-radius: 5px; }
+    .content-view .configure .tabs .tab {
+      padding: 0 8px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      color: #2c9ae8; }
+    .content-view .configure .tabs .active {
+      background: #2c9ae8;
+      color: #fff; }
+  .content-view .parameter .include .info .title {
+    margin-left: 18px;
+    color: #2c9ae8; }
+  .content-view .parameter .include .slider {
+    margin-top: 30px;
+    position: relative; }
+    .content-view .parameter .include .slider .ivu-poptip-popper {
+      top: -90px !important;
+      min-width: 100px;
+      width: 100px; }
+      .content-view .parameter .include .slider .ivu-poptip-popper .ivu-poptip-content {
+        width: 100px; }
+      .content-view .parameter .include .slider .ivu-poptip-popper .ivu-poptip-arrow:after {
+        border-top-color: #2c9ae8; }
+      .content-view .parameter .include .slider .ivu-poptip-popper .item {
+        cursor: pointer;
+        text-align: center;
+        border-bottom: 1px solid #303030; }
+        .content-view .parameter .include .slider .ivu-poptip-popper .item:hover {
+          color: #2c9ae8;
+          border-bottom: 1px solid #2c9ae8; }
+    .content-view .parameter .include .slider .section {
+      position: absolute;
+      height: 10px;
+      top: -7px; }
+      .content-view .parameter .include .slider .section span {
+        position: absolute;
+        top: 10px; }
+      .content-view .parameter .include .slider .section .left {
+        left: -10px; }
+      .content-view .parameter .include .slider .section .right {
+        right: -10px; }
+    .content-view .parameter .include .slider .alt {
+      text-align: center; }
+    .content-view .parameter .include .slider .ivu-slider-wrap {
+      width: 80%;
+      margin: 10px auto; }
+    .content-view .parameter .include .slider .ivu-slider-disabled .ivu-slider-bar {
+      cursor: default;
+      background-color: #2c9ae8; }
+    .content-view .parameter .include .slider .ivu-slider-disabled .ivu-slider-button {
+      cursor: default;
+      border: 2px solid #2c9ae8 !important; }
+    .content-view .parameter .include .slider .value {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between; }
+      .content-view .parameter .include .slider .value .min, .content-view .parameter .include .slider .value .max {
+        margin-left: 18px; }
+        .content-view .parameter .include .slider .value .min input, .content-view .parameter .include .slider .value .max input {
+          padding-left: 5px;
+          width: 100px;
+          height: 24px;
+          border-radius: 24px;
+          border: 1px solid #c5b8b8 !important;
+          outline: none; }
+      .content-view .parameter .include .slider .value .max {
+        margin-right: 18px;
+        justify-content: flex-end; }
+    .content-view .parameter .include .slider .sections {
+      margin-top: 30px; }
+      .content-view .parameter .include .slider .sections .limits {
+        padding-left: 18px;
+        margin-top: 20px; }
+        .content-view .parameter .include .slider .sections .limits .limit {
+          float: left; }
+          .content-view .parameter .include .slider .sections .limits .limit input {
+            padding-left: 5px; }
+          .content-view .parameter .include .slider .sections .limits .limit span {
+            position: absolute;
+            color: red; }
+        .content-view .parameter .include .slider .sections .limits .connector {
+          float: left;
+          margin: 0 10px; }
+    .content-view .parameter .include .slider .alertLevels .ivu-radio-group label {
+      margin: 30px 30px 20px 18px;
+      border: 1px solid #2c9ae8 !important;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 24px;
+      color: #2c9ae8; }
+    .content-view .parameter .include .slider .alertLevels .ivu-radio-group .active {
+      background-color: #2c9ae8;
+      color: #fff; }
+  .content-view .parameter .include .buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 18px; }
+    .content-view .parameter .include .buttons .button {
+      background-color: #2c9ae8;
+      color: #fff;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 4px;
+      float: left;
+      padding: 0 10px;
+      margin: 0 10px;
+      cursor: pointer; }
+
+.small-modal, .edit-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .small-modal .ivu-modal, .edit-modal .ivu-modal {
+    top: 0; }
+    .small-modal .ivu-modal .ivu-modal-content .ivu-modal-header, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-header {
+      text-align: center;
+      border-top: 4px solid #2c9ae8;
+      border-radius: 6px;
+      padding: 0 !important; }
+      .small-modal .ivu-modal .ivu-modal-content .ivu-modal-header p, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-header p {
+        height: 46px;
+        line-height: 46px;
+        position: relative; }
+        .small-modal .ivu-modal .ivu-modal-content .ivu-modal-header p span, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-header p span {
+          font-size: 16px;
+          color: #303030; }
+        .small-modal .ivu-modal .ivu-modal-content .ivu-modal-header p .titleLeft, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-header p .titleLeft {
+          display: block;
+          top: -10px; }
+    .small-modal .ivu-modal .ivu-modal-content .ivu-modal-body, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-body {
+      padding: 30px 35px; }
+      .small-modal .ivu-modal .ivu-modal-content .ivu-modal-body p, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-body p {
+        text-align: center; }
+        .small-modal .ivu-modal .ivu-modal-content .ivu-modal-body p span, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-body p span {
+          margin-right: 5px;
+          line-height: 28px; }
+        .small-modal .ivu-modal .ivu-modal-content .ivu-modal-body p .is-danger, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-body p .is-danger {
+          color: red;
+          font-size: 16px;
+          padding-top: 5px;
+          vertical-align: bottom; }
+        .small-modal .ivu-modal .ivu-modal-content .ivu-modal-body p input, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-body p input {
+          outline: none;
+          width: 70%;
+          height: 28px;
+          line-height: 28px;
+          font-size: 14px;
+          color: #666;
+          padding-left: 5px;
+          border: 1px solid #e0e0e0 !important;
+          border-radius: 4px; }
+    .small-modal .ivu-modal .ivu-modal-content .ivu-modal-footer .ivu-btn, .edit-modal .ivu-modal .ivu-modal-content .ivu-modal-footer .ivu-btn {
+      width: 48%;
+      border-radius: 6px;
+      background-color: #30a6e4 !important;
+      color: #fff;
+      height: 42px;
+      font-size: 16px; }
+
+.edit-modal .ivu-modal-body {
+  padding: 0 35px !important; }
+  .edit-modal .ivu-modal-body .sections {
+    margin-top: 10px; }
+    .edit-modal .ivu-modal-body .sections .title {
+      color: #2c9ae8; }
+    .edit-modal .ivu-modal-body .sections .limits {
+      padding-left: 18px;
+      margin-top: 10px; }
+      .edit-modal .ivu-modal-body .sections .limits .limit {
+        float: left; }
+        .edit-modal .ivu-modal-body .sections .limits .limit input {
+          padding-left: 5px;
+          width: 140px; }
+        .edit-modal .ivu-modal-body .sections .limits .limit span {
+          position: absolute;
+          color: red; }
+      .edit-modal .ivu-modal-body .sections .limits .connector {
+        float: left;
+        margin: 0 10px; }
+  .edit-modal .ivu-modal-body .alertLevels .ivu-radio-group label {
+    margin: 10px 10px 10px 18px;
+    border: 1px solid #2c9ae8 !important;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 24px;
+    color: #2c9ae8; }
+  .edit-modal .ivu-modal-body .alertLevels .ivu-radio-group .active {
+    background-color: #2c9ae8;
+    color: #fff; }
+
+/*# sourceMappingURL=warning.css.map */

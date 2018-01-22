@@ -1,0 +1,650 @@
+@charset "UTF-8";
+@import "common";
+.facContent{
+  margin:0 auto;
+  width:1220px;
+}
+
+*{
+  font-size: 14px;
+}
+.ivu-message{
+  bottom: 100px;
+  top: unset !important;
+  .ivu-message-notice{
+    .ivu-message-notice-content{
+      background: rgba(0,0,0,0.4);
+      @include set-radius(20px);
+      color: #fff;
+    }
+  }
+}
+//table
+.ivu-table{
+  thead{
+    tr>th{
+      background-color: $defaultColor;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .ivu-table-cell{
+    text-align: center;
+    white-space: nowrap;
+  }
+  .ivu-checkbox{
+    width:16px;
+    height:16px;
+    border-radius: 100%;
+    background-color: #fff;
+    @include set-border($defaultColor);
+    .ivu-checkbox-inner{
+      border-radius: 100%;
+      width:12px;
+      height:12px;
+      top:1px;
+      &:after{
+        transform: rotate(0) scale(0) !important;
+        background-color: $defaultColor!important;
+      }
+    }
+  }
+
+  tbody tr:hover {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
+}
+//menu Style
+.menuTitle{
+  .title{
+    div>span{
+      a{
+        display: block;
+        height:34px;
+        font-size: 14px;
+        padding-right: 10px;
+        width: auto;
+        &:hover{
+          color: $defaultColor;
+        }
+      }
+      .router-link-active{
+        width:calc(100% + 11px);
+        //background: url(/src/images/warning/triangle2.png) no-repeat 150px 14px;
+        background-color: white;
+        @include set-border($defaultColor,1px);
+        padding-right: 9px;
+        border-right:1px solid #fff!important;
+        z-index: 10;
+        position: relative;
+      }
+    }
+  }
+}
+
+//subMenu Style
+.content-view{
+  float: left;
+  width:calc(100% - 178px);
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  height: calc(100% - 20px);
+  .router-view{
+    height:100%;
+    .leftAside{
+      height:100%;
+      width:190px;
+      float: left;
+      border: 1px solid #2c9ae8;
+      .inside{
+        width: 90%;
+        margin: 0 auto;
+        border-bottom:1px dotted #bbbbbb;
+        @include set-center(32px);
+        &:hover a{
+          color: $defaultColor;
+        }
+        &:hover .router-link-active{
+          color: #fff;
+        }
+      }
+      .router-link-active{
+        display: block;
+        background: $defaultColor;
+        color: #fff;
+        position: relative;
+        width:192px;
+        height:100%;
+        left:-10px;
+        .triangle_border_right{
+          display: block;
+        }
+      }
+      .triangle_border_right{
+        width: 0;
+        height: 0;
+        border-width: 6px 0 6px 6px;
+        border-style: solid;
+        border-color: transparent transparent transparent #2c9ae8;
+        position: absolute;
+        top: 10px;
+        left: 192px;
+        display: none;
+      }
+    }
+  }
+//pageBarStyle
+nav{
+  position: absolute;
+  bottom:20px;
+  left:calc(50% - 60px);
+  border:1px solid #e0e0e0;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    li{
+      height:34px;
+      @include set-center(34px);
+      width:42px;
+      a{
+        color: $defaultColor;
+        font-size: 16px;
+        &:hover{
+          color: #0055b3;
+          background-color: #eeeeee;
+          border-color: #dddddd;
+        }
+      }
+    }
+  }
+}
+
+  //basic style
+  .content{
+    position: relative;
+    float: left;
+    @include set-border($defaultColor);
+    margin-left: 10px;
+    width:calc(100% - 204px);
+    height:100%;
+    .content-title{
+      height:33px;
+      line-height:33px;
+      padding-left:18px;
+      border-bottom: 1px solid #efdddd;
+      color: $defaultColor;
+      font-size:16px;
+      margin: 10px 0;
+    }
+    .addBtn{
+      position: relative;
+      top:4px;
+      left:91%;
+      height:24px;
+      padding: 0;
+      width: 115px;
+      border-radius: 24px;
+      background-color: #2c9ae8;
+    }
+    .addSystem{
+      color: white;
+      line-height: 24px;
+      text-align: right;
+      padding-right : 5px;
+      img{
+        position: absolute;
+        left:4px;
+        top:2.5px;
+      }
+    }
+    .blocks{
+      padding: 16px 0 0 18px;
+      overflow-y: scroll;
+      margin-top: 15px;
+      max-height:86%;
+      .paraType{
+        position: relative;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        width:112px;
+        height:30px;
+        line-height: 30px;
+        float: left;
+        color: #fff;
+        background-image: url(/src/images/warning/byqgl_button.png);
+        &:hover{
+          background-image: url(/src/images/warning/byqgl_hover_button.png);
+        }
+        .paraTypeNames{
+          width:65%;
+          text-align: center;
+          float: left;
+        }
+        .setting{
+          width:35%;
+          float: left;
+          z-index: 5;
+          height:100%;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        .setting:hover + .settingInfo{
+          display: block;
+        }
+        .settingInfo{
+          display: none;
+          cursor: pointer;
+          position: absolute;
+          width: 140px;
+          height:65px;
+          top: -18px;
+          left: 93px;
+          z-index: 10;
+          background-image: url(/src/images/warning/byqgl_hover_xiugai_shanchu_button.png);
+          &:hover{
+            display: block;
+          }
+          span{
+            @include set-font(14px,#666);
+            margin-left:10px;
+            line-height:65px;
+            &:hover{
+              color: #0471be;
+              @include set-signalBorder(bottom,1px,#0471be);
+            }
+          }
+          .edit{
+            margin-left:40px;
+          }
+        }
+      }
+      .longSystem{
+        width:191px;
+        background-image: url(/src/images/warning/byqgl_button2.png);
+        &:hover{
+          background-image: url(/src/images/warning/byqgl_hover_button2.png);
+        }
+        .paraTypeNames{
+          width:80%;
+        }
+        .setting{
+          width:20%;
+        }
+        .settingInfo{
+          left:172px;
+        }
+      }
+    }
+  }
+  //maintain style
+  .paraTypeAlert{
+    .ivu-poptip{
+      .ivu-poptip-content{
+        box-shadow: 0px 0px 1px 2px #e0e0e0;
+        width: 125px;
+        border-radius: 6px;
+        .ivu-poptip-arrow::after{
+          border-bottom-color: #e0e0e0;
+        }
+        .ivu-poptip-title{
+          color: $defaultColor;
+        }
+        .ivu-poptip-body-content{
+          color: #303030;
+          .item{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .ivu-row{
+      margin: 10px 18px;
+      line-height: 24px;
+      .system{
+        text-align: right;;
+      }
+      .building,.signal{
+        text-align: center;
+      }
+      .ivu-col{
+        margin: 10px 0;
+        label{
+          width:102px;
+        }
+        .selects{
+          display: inline-block;
+          position: relative;
+          width:calc(100% - 110px);
+          select{
+            width:100%;
+            position: relative;
+            outline: none;
+            line-height:24px;
+            padding-left:5px;
+            color: #303030;
+            height:24px;
+            @include set-radius(5px)
+          }
+          .line{
+            position: absolute;
+            right: 21px;
+            width: 1px;
+            height: calc(100% - 2px);
+            background-color: #a9a9a9;
+            top: 0;
+          }
+        }
+      }
+    }
+    .operates{
+      display: flex;
+      justify-content: flex-end;
+      .operate{
+        margin: 0 9px;
+        width:auto;
+        padding:0 10px;
+        height:24px;
+        @include set-center(24px);
+        @include set-radius(24px);
+        color: #fff;
+        background-color: $defaultColor;
+        img{
+          position: relative;
+          top: 3px;
+        }
+        span{
+          position: relative;
+          top: -2px;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  //configure
+  .configure{
+    @extend .paraTypeAlert;
+    .tabs{
+      float: right;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 18px;
+      @include set-border($defaultColor);
+      @include set-radius(5px);
+      .tab{
+        padding:0 8px;
+        height:24px;
+        @include set-center(24px);
+        color: $defaultColor;
+      }
+      .active{
+        background: $defaultColor;
+        color: #fff;
+      }
+    }
+  }
+  //parameter
+  .parameter{
+    @extend .paraTypeAlert;
+    .include{
+      .info{
+        .title{
+          margin-left: 18px;
+          color: $defaultColor;
+        }
+      }
+      .slider{
+        margin-top: 30px;
+        position: relative;
+        .ivu-poptip-popper{
+          top: -90px!important;
+          min-width: 100px;
+          width:100px;
+          .ivu-poptip-content{
+            width:100px;
+          }
+          .ivu-poptip-arrow:after{
+            border-top-color: $defaultColor;
+          }
+          .item{
+            cursor: pointer;
+            text-align: center;
+            border-bottom: 1px solid #303030;
+            &:hover{
+              color: $defaultColor;
+              border-bottom: 1px solid $defaultColor;
+            }
+          }
+        }
+        .section{
+          position:absolute;
+          height:10px;
+          top:-7px;
+          span{
+            position: absolute;
+            top: 10px;
+          }
+          .left{
+            left:-10px;
+          }
+          .right{
+            right:-10px;
+          }
+        }
+        .alt{
+          text-align: center;
+        }
+        .ivu-slider-wrap{
+          width:80%;
+          margin: 10px auto;
+        }
+        .ivu-slider-disabled {
+          .ivu-slider-bar{
+            cursor: default;
+            background-color: $defaultColor;
+          }
+          .ivu-slider-button{
+            cursor: default;
+            @include set-border($defaultColor,2px);
+          }
+        }
+        .value{
+          margin-top: 30px;
+          display: flex;
+          justify-content: space-between;
+          .min{
+            margin-left:18px;
+            input{
+              padding-left: 5px;
+              width:100px;
+              height:24px;
+              @include set-radius(24px);
+              @include set-border(#c5b8b8);
+              outline:none;
+            }
+          }
+          .max{
+            margin-right: 18px;
+            @extend .min;
+            justify-content: flex-end;
+          }
+        }
+        .sections{
+          margin-top: 30px;
+          .limits{
+            padding-left: 18px;
+            margin-top: 20px;
+            .limit{
+              float: left;
+              input{
+                padding-left:5px;
+              }
+              span{
+                position: absolute;
+                color: red;
+              }
+            }
+            .connector{
+              float: left;
+              margin: 0 10px;
+            }
+          }
+        }
+        .alertLevels{
+          .ivu-radio-group{
+            label{
+              margin: 30px 30px 20px 18px;
+              @include set-border($defaultColor);
+              height:24px;
+              @include set-center(24px);
+              @include set-radius(24px);
+              color: $defaultColor;
+            }
+            .active{
+              background-color: $defaultColor;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .buttons{
+        position: absolute;
+        bottom:20px;
+        right:18px;
+        .button{
+          background-color: $defaultColor;
+          color: #fff;
+          height:24px;
+          @include set-center(24px);
+          @include set-radius(4px);
+          float: left;
+          padding:0 10px;
+          margin: 0 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
+}
+//modal Style
+.small-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ivu-modal{
+    top: 0;
+    .ivu-modal-content{
+      .ivu-modal-header{
+        text-align: center;
+        border-top: 4px solid $defaultColor;
+        border-radius: 6px;
+        padding: 0 !important;;
+        p{
+          height:46px;
+          line-height:46px;
+          position: relative;
+          span{
+            @include set-font(16px,#303030);
+          }
+          .titleLeft{
+            display: block;
+            top:-10px;
+          }
+        }
+      }
+      .ivu-modal-body{
+        padding: 30px 35px;
+        p{
+          text-align: center;
+          span{
+            margin-right: 5px;
+            line-height: 28px;
+          }
+          .is-danger{
+            color: red;
+            font-size: 16px;
+            padding-top:5px;
+            vertical-align: bottom;
+          }
+          input{
+            outline: none;
+            width: 70%;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+            color: #666;
+            padding-left: 5px;
+            border: 1px solid #e0e0e0 !important;
+            border-radius: 4px;
+          }
+        }
+      }
+      .ivu-modal-footer{
+        .ivu-btn{
+          width: 48%;
+          border-radius: 6px;
+          background-color: #30a6e4 !important;
+          color: #fff;
+          height: 42px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+.edit-modal{
+  @extend .small-modal;
+  .ivu-modal-body{
+    padding:0 35px!important;
+    .sections{
+      margin-top: 10px;
+      .title{
+        color: $defaultColor;
+      }
+      .limits{
+        padding-left: 18px;
+        margin-top: 10px;
+        .limit{
+          float: left;
+          input{
+            padding-left:5px;
+            width: 140px;
+          }
+          span{
+            position: absolute;
+            color: red;
+          }
+        }
+        .connector{
+          float: left;
+          margin: 0 10px;
+        }
+      }
+    }
+    .alertLevels{
+      .ivu-radio-group{
+        label{
+          margin: 10px 10px 10px 18px;
+          @include set-border($defaultColor);
+          height:24px;
+          @include set-center(24px);
+          @include set-radius(24px);
+          color: $defaultColor;
+        }
+        .active{
+          background-color: $defaultColor;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,238 @@
+@import "common";
+.b-1px {
+  border: none!important;
+  margin-top: 54px;
+}
+.panel.panel-default{
+  border:0;
+}
+.myList{
+  width:100%;
+  height:100%;
+  margin:0;
+  .firstTitle{
+    position: absolute;
+    color:#333;
+    top: 19px;
+    left: $left;
+    font-size: 16px;
+  }
+  .rateBar{
+    width:100%;
+    height:68px;
+    border-top:1px solid #bbb;
+    border-bottom:1px solid #bbb;
+    .barContent{
+      width:360px;
+      height:100%;
+      border-right:1px solid #bbb;
+      padding-left:$left;
+      float: left;
+      .barTitle{
+        width:100%;
+        padding-top: 12px;
+        font-size:14px;
+        color: #333;
+        height: 26px;
+      }
+      .barBase{
+        width: 240px;
+        height: 14px;
+        float: left;
+        background: #bbb;
+        border-radius: 14px;
+        margin-top: 12px;
+        margin-right: 8px;
+        .bar{
+          width:0%;
+          position: relative;
+          height: 14px;
+          background: #007aff;
+          border-radius: 14px;
+          transition: width 1s ease;
+          .circle{
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background-color: #007aff;
+            border-radius: 13px;
+            @include set-border(#fff);
+            top: 1px;
+            right: -3px;
+          }
+          .inCircle{
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            background-color: #fff;
+            border-radius: 9px;
+            top: 3px;
+            right: -1px;
+          }
+        }
+      }
+      .barNum{
+        font-size: 22px;
+        float: left;
+        color: $defaultColor;
+      }
+    }
+    .timeContent{
+      @extend .barContent;
+      width: 188px;
+      padding-right: 0;
+      .timingBox{
+        .timing{
+          float: left;
+          margin-top: 5px;
+          div{
+            color: #007aff;
+            float: left;
+            width:22px;
+            height:27px;
+            border-radius: 6px;
+            font-size: 16px;
+            text-align: center;
+            margin-right: 2px;
+            @include set-border(#bbb,2px);
+            @include set-center(25px);
+          }
+          .word{
+            font-size:12px;
+            border: 0 !important;
+            width:24px;
+            margin-right: 5px;
+            @include set-center(27px,left);
+          }
+        }
+      }
+    }
+  }
+  .endState{
+    font-size: 16px;
+    padding-left: 26px;
+    line-height: 68px;
+    span{
+      font-size: 24px;
+      color: #2c9ae8;
+      padding: 7px;
+    }
+  }
+  .row{
+    height: 100%;
+    width: 100%;
+    padding-left: $left;
+    margin: 0;
+    .card{
+      position: relative;
+      width:121px;
+      height: 69px;
+      margin-top: 20px;
+      margin-right:9px;
+      @include set-center(69px);
+      float: left;
+      .col{
+        font-size: 16px;
+        text-align: center;
+        width:121px;
+        height:69px;
+        border-radius: 5px;
+        @include set-border(#e0e0e0);
+        color: #e0e0e0;
+      }
+      .normal{
+        @include set-border(#249f01);
+        color:#249f01;
+        @extend .rateBar;
+        .barBase{
+          margin:0;
+          position: absolute;
+          width: 119px;
+          height:10px;
+          background-color: #fff;
+          bottom: 1px;
+          border-top: 1px solid;
+          border-top-right-radius: 0;
+          border-top-left-radius: 0;
+        }
+        .bar{
+          height:10px;
+          width:0%;
+          @include set-gradient(rgb(128,194,105) , rgb(143,217,147));
+        }
+      }
+      .notStart{
+         @extend .normal;
+         color:#e0e0e0;
+         @include set-border(#e0e0e0);
+       }
+      .unusual{
+        @extend .normal;
+        color:#ef6e5b;
+        @include set-border(#ef6e5b);
+        .bar{
+          @include set-gradient(rgb(230,110,91) , rgb(255,117,97))
+        }
+      }
+      .stateLabel{
+        i{
+          display: block;
+          position: absolute;
+          top: 3px;
+          right: 5px;
+          font-size: 19px;
+        }
+      }
+      .line{
+        width: 830px;
+        height: 1px;
+        background-color: #bbb;
+        position: absolute;
+        bottom: -10px;
+        left: -26px;
+      }
+    }
+    .pauseBtn{
+      cursor: pointer;
+      height:28px;
+      padding: 0px 15px;
+      background-color: #2c9ae8;
+      border-radius: 4px;
+      color: #fff;
+      @include set-center(28px);
+      position: absolute;
+      bottom:21px;
+      right:25px;
+    }
+  }
+}
+.modal-content {
+  height: auto;
+}
+#pauseDialog{
+  .modal-body{
+    height:auto;
+    padding:0;
+    overflow-y: auto;
+  }
+  .content{
+    background-color: #fff;
+  }
+  .bodyTitle{
+    width:100%;
+    height:60px;
+    @include set-center(60px);
+    //border-bottom:1px solid #bbb;
+  }
+  .modal-footer{
+    padding:15px 25px;
+    .btn{
+      width: (100% - 4)/2;
+      border-radius: 6px;
+    }
+    .btn-primary{
+      background-color: #30a6e4;
+      color: #fff;
+    }
+  }
+}

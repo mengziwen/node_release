@@ -1,0 +1,49 @@
+@import './_common.scss';
+@import './table.scss';
+#postManage {
+    .title {
+        float: none;
+    }
+    .search {
+        float: right;
+        padding-right: 25px;
+    }
+    .edit-btn {
+        display: inline-block;
+        @include set-margin('right', 5px);
+        cursor: pointer;
+    }
+    .addMenuBtn{
+        text-indent: 15px;
+        line-height: 24px;
+        color: #fff;
+        background: url('/src/images/postManage/xtgl_btn_tjry.png') no-repeat 50% 0%;
+    }
+}
+
+#dialogDel {
+    .modal-body{
+        padding: 0;
+        height: auto;
+    }
+    .content{
+        padding-bottom: 20px;
+        background-color: #fff;
+    }
+    .modal-footer{
+        padding: 0;
+    }
+    .hint-info {
+        padding-top: 15px;
+        text-align: center;
+        line-height: 2;
+        letter-spacing: 2px;
+    }
+    .cancel-btn{
+        width: 100%;
+        border-radius: 0;
+        border-radius: 0 0 5px 5px;
+        overflow: hidden;
+        background-color: #30a6e4 !important;
+    }
+}
